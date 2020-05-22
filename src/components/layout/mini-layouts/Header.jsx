@@ -1,4 +1,5 @@
 import React from "react";
+import logo from "../../../img/brand.jpg";
 
 import { Link } from "react-router-dom";
 import "./Header.css";
@@ -13,35 +14,21 @@ const Header = () => {
               <div className="col-lg-6 col-sm-6 col-8 header-top-left no-padding">
                 <ul>
                   <li>
-                    <Link href="#">
+                    <Link to="#">
                       <i className="fa fa-facebook"></i>
                     </Link>
                   </li>
                   <li>
-                    <Link href="#">
+                    <Link to="#">
                       <i className="fa fa-twitter"></i>
-                    </Link>
-                  </li>
-                  <li>
-                    <Link href="#">
-                      <i class="far fa-dribbble"></i>
-                    </Link>
-                  </li>
-                  <li>
-                    <Link href="#">
-                      <i class="far fa-behance"></i>
                     </Link>
                   </li>
                 </ul>
               </div>
               <div className="col-lg-6 col-sm-6 col-4 header-top-right no-padding">
-                <Link href="tel:+953 012 3654 896">
+                <Link to="tel:+953 012 3654 896">
                   <span className="lnr lnr-phone-handset"></span>{" "}
-                  <span class="text">+953 012 3654 896</span>
-                </Link>
-                <Link href="mailto:support@colorlib.com">
-                  <span className="lnr lnr-envelope"></span>{" "}
-                  <span class="text">support@colorlib.com</span>
+                  <span className="text">+953 012 3654 896</span>
                 </Link>
               </div>
             </div>
@@ -50,65 +37,74 @@ const Header = () => {
         <div className="container main-menu">
           <div className="row align-items-center justify-content-between d-flex">
             <div id="logo">
-              <Link href="index.html">
-                <img src="img/logo.png" alt="" title="" />
+              <Link to="index.html">
+                <img
+                  src={logo}
+                  alt=""
+                  title="logo"
+                  style={{ width: "12.9rem" }}
+                />
               </Link>
             </div>
             <nav id="nav-menu-container">
               <ul className="nav-menu">
                 <li>
-                  <Link href="index.html">Home</Link>
+                  <Link to="/home">Home</Link>
                 </li>
                 <li>
-                  <Link href="about.html">About</Link>
+                  <Link to="/about">About</Link>
                 </li>
                 <li>
-                  <Link href="courses.html">Courses</Link>
+                  <Link to="/courses">Courses</Link>
                 </li>
                 <li>
-                  <Link href="events.html">Events</Link>
+                  <Link to="/register">Register</Link>
                 </li>
                 <li>
-                  <Link href="gallery.html">Gallery</Link>
+                  <Link to="/log-in">Log in</Link>
                 </li>
-                <li className="menu-has-children">
-                  <Link href="">Blog</Link>
+                <li>
+                  <Link to="/events">Events</Link>
+                </li>
+
+                {/* <li className="menu-has-children">
+                  <Link to="">Blog</Link>
                   <ul>
                     <li>
-                      <Link href="blog-home.html">Blog Home</Link>
+                      <Link to="blog-home.html">Blog Home</Link>
                     </li>
                     <li>
-                      <Link href="blog-single.html">Blog Single</Link>
+                      <Link to="blog-single.html">Blog Single</Link>
                     </li>
                   </ul>
-                </li>
-                <li className="menu-has-children">
-                  <Link href="">Pages</Link>
+                </li> */}
+                {/* <li className="menu-has-children">
+                  <Link to="">Pages</Link>
                   <ul>
                     <li>
-                      <Link href="course-details.html">Course Details</Link>
+                      <Link to="course-details.html">Course Details</Link>
                     </li>
                     <li>
-                      <Link href="event-details.html">Event Details</Link>
+                      <Link to="event-details.html">Event Details</Link>
                     </li>
                     <li>
-                      <Link href="elements.html">Elements</Link>
+                      <Link to="elements.html">Elements</Link>
                     </li>
                     <li className="menu-has-children">
-                      <Link href="">Level 2 </Link>
+                      <Link to="">Level 2 </Link>
                       <ul>
                         <li>
-                          <Link href="#">Item One</Link>
+                          <Link to="#">Item One</Link>
                         </li>
                         <li>
-                          <Link href="#">Item Two</Link>
+                          <Link to="#">Item Two</Link>
                         </li>
                       </ul>
                     </li>
                   </ul>
-                </li>
+                </li> */}
                 <li>
-                  <Link href="contact.html">Contact</Link>
+                  <Link to="/contact">Contact</Link>
                 </li>
               </ul>
             </nav>

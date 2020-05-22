@@ -1,3 +1,7 @@
+body {
+  color: white;
+}
+
 ::-moz-selection {
   background-color: #f7631b;
   color: #fff;
@@ -1960,7 +1964,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   color: #fff;
 }
 .section-gap {
-  padding: 120px 0;
+  padding: 90px 0;
 }
 .alert-msg {
   color: #008000;
@@ -2069,11 +2073,11 @@ body.mobile-nav-active #mobile-nav-toggle {
   text-align: left;
 }
 .banner-content h1 {
-  font-size: 48px;
-  font-weight: 700;
-  line-height: 1em;
-  margin-top: 10px;
-  color: #fff;
+  font-size: 48px !important;
+  font-weight: 700 !important;
+  line-height: 1em !important;
+  margin-top: 10px !important;
+  color: #fff !important;
 }
 @media (max-width: 991.98px) {
   .banner-content h1 {
@@ -2229,7 +2233,8 @@ body.mobile-nav-active #mobile-nav-toggle {
   transform: scale(1.1);
 }
 .search-course-area {
-  background: url(../img/s-bg.jpg) center;
+  background: url("https://res.cloudinary.com/jerry299/image/upload/v1590113970/s-bg_urnvyr.jpg")
+    center;
   background-size: cover;
 }
 .search-course-area .overlay-bg {
@@ -2508,7 +2513,8 @@ body.mobile-nav-active #mobile-nav-toggle {
   font-weight: 600;
 }
 .cta-one-area {
-  background: url(../img/cta-bg.jpg) center;
+  background: url("https://res.cloudinary.com/jerry299/image/upload/v1590117739/cta-bg_rnd4dz.jpg")
+    center;
   background-size: cover;
   text-align: center;
   color: #fff;
